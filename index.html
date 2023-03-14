@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richa | Home</title>
+
+
+  <!-- src start  -->
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+  <!-- src end -->
+
+  <!-- bootstrab start -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- bootstrab end -->
+
+  <!-- icone start -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <!-- icone end -->
+</head>
+
+<body>
+  <div id="loading" ></div>
+  <!-- /* header start */ -->
+  <header class="p-3" id="header_js">
+    <a href="#" class="logo">logo</a>
+    <ul class="he1 d-none d-sm-block">
+      <li><a class="test" href="./index.html">home</a></li>
+      <li><a class="test" href="./GALLERY.html">GALLERY</a></li>
+      <li><a class="test" href="./about.html">about</a></li>
+      <li><a class="test" href="./contact.html">contact</a></li>
+    </ul>
+    <ul class="he2 ">
+      <li><a class="d-sm-none d-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight" href="#"><i class="fi fi-rr-menu-burger"></i></a></li>
+      <li id="search1"><a href="#" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><i
+            class="fi fi-rr-search"></i></a></li>
+      <li><a href="#"><i class="fi fi-rr-shopping-cart"></i></a></li>
+    </ul>
+  </header>
+  <div class="collapse navbar-collapse p-2 text-center" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <input type="search" name="search" id="search" placeholder="search...">
+      </li>
+    </ul>
+  </div>
+  <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="he11">
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./GALLERY.html">GALLERY</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="./contact.html">contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /* header end */ -->
+  <section id="Ga">
+    <!-- content 1 start -->
+    <div class="content">
+      <div class="co position-absolute align-items-center d-inline-flex top-50 start-50 translate-middle">
+        <div class="ps-5 text">
+          <h1>World</h1>
+          <h5>BOOK DAY</h5>
+          <button onclick="window.location.href = './GALLERY.html';" >SHOP GO</button>
+        </div>
+        <div><img src="./imge/book-home.png" alt="man-book"></div>
+      </div>
+    </div>
+    <div class="content-1 row row-cols-lg-4 row-cols-md-2 row-cols-1 py-3 hidden">
+      <div class="col my-2">
+        <div><i class="fi fi-rr-truck-side"></i></div>
+        <div>
+          <h4>Fast Dellvery</h4>
+          <p>Dellvery is very fast </p>
+        </div>
+      </div>
+      <div class="col my-2">
+        <div><i class="fi fi-rr-badge-check"></i></div>
+        <div>
+          <h4>Best Quality</h4>
+          <p>The best product for the best customer</p>
+        </div>
+      </div>
+      <div class="col my-2">
+        <div><i class="fi fi-rr-coins"></i></div>
+        <div>
+          <h4>Payment upon receipt</h4>
+          <p>Payment upon receipt of the books</p>
+        </div>
+      </div>
+      <div class="col my-2">
+        <div><i class="fi fi-rr-headset"></i></div>
+        <div>
+          <h4>24/7 Support</h4>
+          <p>Dotlcated Support</p>
+        </div>
+      </div>
+    </div>
+    <!-- content 1 end -->
+    <!-- content 2 start -->
+    <div class="content-2 hidden">
+      <div class="container">
+        <input type="radio" name="card" id="c1" checked>
+        <input type="radio" name="card" id="c2">
+        <input type="radio" name="card" id="c3">
+        <input type="radio" name="card" id="c4">
+        <input type="radio" name="card" id="c5">
+        <label for="c1" id="card1"></label>
+        <label  for="c2" id="card2"></label>
+        <label for="c3" id="card3"></label>
+        <label for="c4" id="card4"></label>
+        <label for="c5" id="card5"></label>
+      </div>
+    </div>
+    <!-- content 2 end -->
+    <!-- content 3 start -->
+    <div class="content-3 hidden">
+      <div class="product">
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+        </div>
+      </div>
+      <div class="co-3">
+        <h3>What Students
+          Say About Us</h3>
+        <div>
+          <button class="pre-btn"><i class="fi fi-rr-angle-left"></i></button>
+          <button class="nxt-btn"><i class="fi fi-rr-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- content 3 end -->
+    <!-- content-4 start -->
+    <div class="content-4 hidden">
+      <div class="product">
+        <button class="pre-btn"><i class="fi fi-rr-angle-left"></i></button>
+        <button class="nxt-btn"><i class="fi fi-rr-angle-right"></i></button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content-4 end -->
+    <!-- content-5 start -->
+    <div class="content-5 hidden">
+      <div class="co-5">
+        <h3>the benefits of reading</h3>
+      </div>
+      <div class="co-51">
+        <div>
+          <h4>Improving vocabulary and language skills</h4>
+        </div>
+        <div>
+          <h4>Developing critical thinking skills</h4>
+        </div>
+        <div>
+          <h4>Increasing knowledge and cultural awareness</h4>
+        </div>
+        <div>
+          <h4>Improving memory and concentration</h4>
+        </div>
+        <div>
+          <h4>Encouraging imagination and creativity</h4>
+        </div>
+      </div>
+    </div>
+    <!-- content-5 end -->
+    <!-- content-6 end -->
+    <div class="content-4 hidden">
+      <div class="product">
+        <button class="pre-btn"><i class="fi fi-rr-angle-left"></i></button>
+        <button class="nxt-btn"><i class="fi fi-rr-angle-right"></i></button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content-6 end -->
+  </section>
+
+  <section id="book">
+    <button onclick="clo_h()" id="close"><i class="fi fi-rr-cross"></i></button>
+    <div class="b-content-1">
+      <div class="b-co1">
+        <img id="b-img" src="./imge/arabic/الأب الغني الأب الفقير.jpeg" alt="">
+      </div>
+      <div class="b-co2">
+        <h3 id="b-name"></h3>
+        <h4>About</h4>
+        <p id="b-about"></p>
+        <div class="b-co2-1"><button id="b1" onclick="add_0()">-</button><input type="number" id="no1" value="1"><button
+            id="b2" onclick="add_1()">+</button></div>
+        <div class="b-co2-2">
+        </div>
+        <button class="b-buy" onclick="window.location.href = 'buy.html';">BUY</button><button class="b-add"><i
+            class="fi fi-rr-shopping-cart-add"></i></button>
+      </div>
+    </div>
+
+
+
+
+    <div class="b-content-2">
+      <div class="product ">
+        <button class="pre-btn"><i class="fi fi-rr-angle-left"></i></button>
+        <button class="nxt-btn"><i class="fi fi-rr-angle-right"></i></button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/man.png" alt="">
+
+            </div>
+            <div class="pr-info">
+              <p><sup>"</sup> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+            <span class="name">ahmed elhoinki</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-content-3">
+      <div class="product ">
+        <button class="pre-btn"><i class="fi fi-rr-angle-left"></i></button>
+        <button class="nxt-btn"><i class="fi fi-rr-angle-right"></i></button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./imge/arabic/44.jpeg" alt="">
+            </div>
+            <div class="product-info">
+              <div>
+                <h5>Lorem, ipsum.</h5>
+                <p>200$ <sup>300$</sup></p>
+              </div>
+              <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- /* footre start */ -->
+  <footer>
+    <div id="fo1">
+      <svg id="visual" viewBox="0 0 3000 200" width="3000" height="200" version="1.1">
+        <path
+          d="M0 139L71.5 142.2C143 145.3 286 151.7 428.8 156.2C571.7 160.7 714.3 163.3 857.2 163.8C1000 164.3 1143 162.7 1285.8 158.7C1428.7 154.7 1571.3 148.3 1714.2 142.8C1857 137.3 2000 132.7 2142.8 136C2285.7 139.3 2428.3 150.7 2571.2 152C2714 153.3 2857 144.7 2928.5 140.3L3000 136L3000 201L2928.5 201C2857 201 2714 201 2571.2 201C2428.3 201 2285.7 201 2142.8 201C2000 201 1857 201 1714.2 201C1571.3 201 1428.7 201 1285.8 201C1143 201 1000 201 857.2 201C714.3 201 571.7 201 428.8 201C286 201 143 201 71.5 201L0 201Z"
+          stroke-linecap="round" stroke-linejoin="miter"></path>
+      </svg>
+      <img src="./imge/boat.png" alt="">
+    </div>
+    <div id="fo2" class="text-center text-dark ">
+      <div class="p-4">
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row  align-items-center">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">logo</h5>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="./index.html" class="text-dark fo-hv">HOME</a>
+              </li>
+              <li>
+                <a href="./GALLERY.html" class="text-dark fo-hv">GALLERY</a>
+              </li>
+              <li>
+                <a href="./about.html" class="text-dark fo-hv">ABOUT</a>
+              </li>
+              <li>
+                <a href="./contact.html" class="text-dark fo-hv">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark fo-hv">Facebook</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark fo-hv">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark fo-hv">Whatsapp</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark fo-hv">Gmail</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
+      <div class="text-center p-1 bg-dark text-white">
+        © 2020 Copyright:
+      </div>
+    </div>
+  </footer>
+
+  <!-- /* footer end */ -->
+
+</body>
+
+</html>

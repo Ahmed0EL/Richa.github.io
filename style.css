@@ -130,9 +130,8 @@ header a {
     letter-spacing: 3px;
 }
 
-header .test:is(:hover, :focus),
-header .active {
-    text-decoration: underline var(--co3) 3px !important;
+header .test:is(:hover, :focus){
+    text-decoration: underline var(--co3-bt) 3px !important;
     color: var(--co1);
 }
 

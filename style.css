@@ -203,6 +203,7 @@ header .he1 li,
 .co .text h1 {
     font-size: 3rem !important;
     font-weight: 900;
+    color: var(--co4);
 
 }
 
@@ -346,23 +347,23 @@ header .he1 li,
 }
 
 #card1 {
-    background-image: url(./books/best/best1.jpg);
+    background-image: url(./books/fantasyEN/fen.jpg);
 }
 
 #card2 {
-    background-image: url(./books/best/best9.jpg);
+    background-image: url(./books/fantasyEN/fen7.jpg);
 }
 
 #card3 {
-    background-image: url(./books/topArabic/arab12.jpg);
+    background-image: url(./books/best/best3.jpg);
 }
 
 #card4 {
-    background-image: url(./books/fantasyEN/fen2.jpg);
+    background-image: url(./books/fantasyEN/fen13.jpeg);
 }
 
 #card5 {
-    background-image: url(./books/fantasyEN/fen11.jpeg);
+    background-image: url(./books/history/hist11.jpg);
 }
 
 @media (max-width:780px) {
@@ -667,6 +668,9 @@ header .he1 li,
     color: var(--co1);
 }
 
+
+
+
 @media (max-width:480px) {
     .content-3 .product {
         width: 62%;
@@ -674,7 +678,19 @@ header .he1 li,
         z-index: 2;
         position: absolute;
         left: 0;
-        top: -55px;
+        top: -79px;
+    }
+
+
+}
+@media (max-width:300px) {
+    .content-3 .product {
+        width: 300px;
+        overflow: hidden;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: -79px;
     }
 
 
@@ -904,7 +920,10 @@ footer #fo2 .fo-hv:is(:after, :hover) {
     overflow: hidden;
     font-family: 'Cairo', sans-serif !important;
 }
-
+.g-content-1 h3 {
+    text-align: center;
+    color: var(--co2);
+}
 .g-content-1 .product-ca {
     display: flex;
     align-items: center;
@@ -1047,7 +1066,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
 
 .g-content-2 h3 {
     text-align: center;
-    color: var(--co1);
+    color: var(--co2);
 }
 
 .g-content-2 .product {
@@ -1214,7 +1233,10 @@ footer #fo2 .fo-hv:is(:after, :hover) {
     margin-bottom: 10px;
 }
 
-
+.g-content-3 h3 {
+    text-align: center;
+    color: var(--co1);
+}
 
 .g-content-3 .product-container {
     padding: 0 1.8vw;

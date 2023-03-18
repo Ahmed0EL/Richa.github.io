@@ -996,6 +996,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
 .g-content-1 .product-image img {
     width: 100%;
     border-radius: 30px;
+    aspect-ratio: 3.6/5;
 
 }
 
@@ -1149,6 +1150,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
 .g-content-2 .product-image img {
     width: 100%;
     border-radius: 30px;
+    aspect-ratio: 3.6/5;
 
 }
 

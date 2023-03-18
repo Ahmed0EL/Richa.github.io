@@ -212,12 +212,20 @@ function clo_h() {
   document.getElementById("Ga").style.display = 'block';
   document.getElementById("book").style.display = 'none';
   document.title = 'Richa | HOME';
+  document.getElementById("b-img").src = "" ;
+  document.getElementById("b-name").innerHTML = "" ;
+  document.getElementById("b-about").innerHTML = "" ;
+  document.getElementById("prix").innerHTML = "" ;
 
 }
 function clo_g() {
   document.getElementById("Ga").style.display = 'block';
   document.getElementById("book").style.display = 'none';
   document.title = 'Richa | Gallery';
+  document.getElementById("b-img").src = "" ;
+  document.getElementById("b-name").innerHTML = "" ;
+  document.getElementById("b-about").innerHTML = "" ;
+  document.getElementById("prix").innerHTML = "" ;
 
 }
 function book(nom) {

@@ -35,10 +35,6 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
-
-
-
-
 let search = document.getElementById('collapsibleNavbar');
 let header_js = document.getElementById('header_js');
 header_js.style.background = 'none';
@@ -47,16 +43,12 @@ search.style.background = 'none';
 window.onscroll = function (params) {
   let value = scrollY;
   if (scrollY >= 300) {
-    header_js.style.background = 'rgba(255, 255, 255,.5)';
-    search.style.background = 'rgba(255, 255, 255,.5)';
+    header_js.style.background = 'white';
     header_js.style.transition = '0.5s';
-    search.style.transition = '0.5s';
 
   }
   else {
     header_js.style.background = 'none';
-    search.style.background = 'none';
-
   }
 }
 
@@ -232,29 +224,15 @@ function book(nom) {
   window.scrollTo(0, 0);
   document.title = 'Richa | Book';
   document.getElementById("Ga").style.display = 'none';
-  document.getElementById("book").style.display = 'block';
-  let b_img = document.getElementById("b-img");
-  let b_name = document.getElementById("b-name");
-  let b_about = document.getElementById("b-about");
-  let b_10 = document.querySelector(".b-co2-2");
-
-  if (nom == 1) {
-    b_img.src = "./imge/arabic/44.jpeg";
-    b_name.innerHTML = "#44 You Can";
-    b_about.innerHTML = "financière. Il y explique comment l'investissement, l'immobilier, la création et l'acquisitiond'entreprises peuvent être utilisés pour construire sa richesse et devenir financièrementindépendant.";
-    b_10.innerHTML = "<p>100Dh <sup>200Dh</sup></p>";
-  }
-  if (nom == 2) {
-    b_img.src = "./imge/arabic/الأب الغني الأب الفقير.jpeg";
-    b_name.innerHTML = "الأب الغني الأب الفقير";
-    b_about.innerHTML = "Père riche, père pauvre est un livre de Robert Kiyosaki et de Sharon Lechter paru en 1997. De style autobiographique, Robert Kiyosaki utilise un ensemble de paraboles et d'exemples tirés de son propre parcours afin de souligner l'importance de développer son intelligence financière. Il y explique comment l'investissement, l'immobilier, la création et l'acquisitiond'entreprises peuvent être utilisés pour construire sa richesse et devenir financièremen tindépendant";
-    b_10.innerHTML = "<p>200Dh <sup>250Dh</sup></p>";
-  }
-  if (nom == 3) {
-    b_img.src = "./imge/arabic/44.jpeg";
-    b_name.innerHTML = "#44 You Can";
-    b_about.innerHTML = "financière. Il y explique comment l'investissement, l'immobilier, la création et l'acquisitiond'entreprises peuvent être utilisés pour construire sa richesse et devenir financièrementindépendant.";
-    b_10.innerHTML = "<p>100Dh <sup>200Dh</sup></p>";
-  }
-
+  document.getElementById("book").style.display = 'block'
+  fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log('On') ;
+    document.getElementById("b-img").src = data[nom-1].url ;
+    document.getElementById("b-name").innerHTML = data[nom-1].name ;
+    document.getElementById("b-about").innerHTML = data[nom-1].about ;
+    document.getElementById("prix").innerHTML = data[nom-1].prix ;
+    document.getElementById("prix").innerHTML += data[nom-1].prix2 ;
+  })
 }

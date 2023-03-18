@@ -346,23 +346,23 @@ header .he1 li,
 }
 
 #card1 {
-    background-image: url(./imge/arabic/mo.jpeg);
+    background-image: url(./books/best/best1.jpg);
 }
 
 #card2 {
-    background-image: url(./imge/arabic/44.jpeg);
+    background-image: url(./books/best/best9.jpg);
 }
 
 #card3 {
-    background-image: url(./imge/english/hooked.jpeg);
+    background-image: url(./books/topArabic/arab12.jpg);
 }
 
 #card4 {
-    background-image: url(./imge/french/ikigai.jpeg);
+    background-image: url(./books/fantasyEN/fen2.jpg);
 }
 
 #card5 {
-    background-image: url(./imge/french/ikigai.jpeg);
+    background-image: url(./books/fantasyEN/fen11.jpeg);
 }
 
 @media (max-width:780px) {

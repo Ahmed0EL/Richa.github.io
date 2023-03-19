@@ -66,7 +66,7 @@ function abuy() {
     document.getElementById("value1").style.border = "1px red solid";
     document.getElementById("value1").value = "";
   } else {
-    span1.innerHTML = "Name/Last Name";
+    span1.innerHTML = "Name/Last Name :";
     span1.style.color = "black";
     document.getElementById("value1").style.border = "1px black solid";
   }
@@ -89,7 +89,7 @@ function abuy() {
     document.getElementById("value_adresse").style.border = "1px red solid";
     document.getElementById("value_adresse").value = "";
   } else {
-    span2.innerHTML = "Adresse:";
+    span2.innerHTML = "Adresse :";
     span2.style.color = "black";
     document.getElementById("value_adresse").style.border = "1px black solid";
   }
@@ -102,7 +102,7 @@ function abuy() {
     document.getElementById("value_city").style.border = "1px red solid";
     document.getElementById("value_city").value = "";
   } else {
-    span3.innerHTML = "Your City:";
+    span3.innerHTML = "Your City :";
     span3.style.color = "black";
     document.getElementById("value_city").style.border = "1px black solid";
   }
@@ -115,7 +115,7 @@ function abuy() {
     document.getElementById("value_postal").style.border = "1px red solid";
     document.getElementById("value_postal").value = "";
   } else {
-    span4.innerHTML = "Postal:";
+    span4.innerHTML = "Postal :";
     span4.style.color = "black";
     document.getElementById("value_postal").style.border = "1px black solid";
   }
@@ -128,34 +128,36 @@ function abuy() {
     document.getElementById("value_phone").style.border = "1px red solid";
     document.getElementById('value_phone').value = "";
   } else {
-    span5.innerHTML = "Phone Number:";
+    span5.innerHTML = "Phone Number :";
     span5.style.color = "black";
     document.getElementById("value_phone").style.border = "1px black solid";
   }
 
   let h = document.getElementById("value_email").value;
   let span6 = document.getElementById("span6");
-  let index = h.indexOf("@");
-  if (h == "" | index == -1) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (h == "" || emailRegex.test(h) == false) {
     span6.innerHTML = "Your Email*";
     span6.style.color = "red";
     document.getElementById("value_email").style.border = "1px red solid";
     document.getElementById("value_email").value = "";
   } else {
+    span6.innerHTML = "Your Email :";
+    span6.style.color = "black";
     document.getElementById("value_email").style.border = "1px black solid";
   }
 
 
   let m = document.getElementById("value_pass").value;
   let span7 = document.getElementById("span7");
-  let inde = h.indexOf("@");
-  if ((m == "")) {
+  const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  if (m == "" || regex.test(m) === false ) {
     span7.innerHTML = "Create Your Password*";
     span7.style.color = "red";
     document.getElementById("value_pass").style.border = "1px red solid";
     document.getElementById("value_pass").value = "";
   } else {
-    span7.innerHTML = "Create Your Password:";
+    span7.innerHTML = "Create Your Password :";
     span7.style.color = "black";
     document.getElementById("value_pass").style.border = "1px black solid";
   }
@@ -179,9 +181,8 @@ function acontact() {
     document.getElementById("value2").style.border = "1px black solid";
   }
   let h = document.getElementById("value_email").value;
-  let span6 = document.getElementById("span6");
-  let index = h.indexOf("@");
-  if (h == "" | index == -1) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (h == "" | emailRegex.test(h) === false) {
     document.getElementById("value_email").style.border = "1px red solid";
     document.getElementById("value_email").value = "";
   } else {

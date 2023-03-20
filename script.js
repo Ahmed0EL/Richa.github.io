@@ -60,27 +60,19 @@ function abuy() {
   let a = document.getElementById("value1").value;
   let b = document.getElementById("value2").value;
   let span1 = document.getElementById("span1");
-  if (a == "") {
+  const rege = /^[a-zA-Z\s'-]+$/;
+  if (a == "" || b == "" || a , b == null || rege.test(a) === false || rege.test(b) === false  ) {
     span1.innerHTML = "Name/Last Name*";
     span1.style.color = "red";
     document.getElementById("value1").style.border = "1px red solid";
     document.getElementById("value1").value = "";
+    document.getElementById("value2").style.border = "1px red solid";
+    document.getElementById("value2").value = "";
   } else {
     span1.innerHTML = "Name/Last Name :";
     span1.style.color = "black";
     document.getElementById("value1").style.border = "1px black solid";
   }
-  if (b == "") {
-    span1.innerHTML = "Name/Last Name*";
-    span1.style.color = "red";
-    document.getElementById("value2").style.border = "1px red solid";
-    document.getElementById("value2").value = "";
-  } else {
-    span1.innerHTML = "Name/Last Name";
-    span1.style.color = "black";
-    document.getElementById("value2").style.border = "1px black solid";
-  }
-
   let c = document.getElementById("value_adresse").value;
   let span2 = document.getElementById("span2");
   if (c == "") {
@@ -167,8 +159,8 @@ function acontact() {
 
   let a = document.getElementById("value1").value;
   let b = document.getElementById("value2").value;
-  let span1 = document.getElementById("span1");
-  if (a == "") {
+  const rege = /^[a-zA-Z\s'-]+$/;
+  if (a == "" || rege.test(a) === false) {
     document.getElementById("value1").style.border = "1px red solid";
     document.getElementById("value1").value = "";
   } else {

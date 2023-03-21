@@ -36,12 +36,10 @@
 
 
 
-
-
 /* button */
 button {
     border: none;
-    overflow:hidden !important;
+    overflow: hidden !important;
     cursor: pointer;
     position: relative;
     transition: all 1s ease;
@@ -66,6 +64,7 @@ button:active {
         inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
         inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
+
 @keyframes butah {
     0% {
         -webkit-transform: scale(0) rotate(45deg);
@@ -97,11 +96,13 @@ button:active {
     transform: translateXx(-100%);
     transition: all 1s;
 }
+
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
+
 /* ani */
 
 /* header start */
@@ -119,12 +120,33 @@ header {
 header a {
     color: var(--co1);
     letter-spacing: 3px;
+    position: relative;
+}
+a.test:hover{
+    color: var(--co3-bt);
 }
 
-header .test:is(:hover, :focus),
-header .active {
-    text-decoration: underline var(--co3-bt) 3px !important;
+a.test:after {
+    content: '';
     color: var(--co3-bt);
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 2px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+a.test:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 header ul {
@@ -140,7 +162,8 @@ header .he1 li,
     align-items: center;
     text-transform: uppercase;
 }
-.he2 li a:hover{
+
+.he2 li a:hover {
     color: var(--co3-bt) !important;
 }
 
@@ -683,6 +706,7 @@ header .he1 li,
 
 
 }
+
 @media (max-width:300px) {
     .content-3 .product {
         width: 300px;
@@ -921,10 +945,12 @@ footer #fo2 .fo-hv:is(:after, :hover) {
     overflow: hidden;
     font-family: 'Cairo', sans-serif !important;
 }
+
 .g-content-1 h3 {
     text-align: center;
     color: var(--co3-bt);
 }
+
 .g-content-1 .product-ca {
     display: flex;
     align-items: center;
@@ -1019,6 +1045,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
     text-align: center;
 
 }
+
 .g-content-1 .product-info div:hover {
     box-shadow: 1px 10px 20px -13px black;
 }
@@ -1173,6 +1200,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
     text-align: center;
 
 }
+
 .g-content-2 .product-info div:hover {
     box-shadow: 1px 10px 20px -13px black;
 }
@@ -1312,6 +1340,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
     border-radius: 30px;
 
 }
+
 .g-content-3 .product-info {
     padding: 5px;
     width: 100%;
@@ -2016,6 +2045,98 @@ footer #fo2 .fo-hv:is(:after, :hover) {
 }
 
 
+.a-content2 {
+    width: 100%;
+    margin: 10% 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.a-co {
+    width: 20%;
+    text-align: center;
+    box-shadow: 6px 5px 20px -10px black;
+    height: auto;
+    align-items: center;
+    border-radius: 30px;
+    display: grid;
+
+}
+
+.a-co .a-img {
+    position: relative;
+}
+
+.a-co .a-img div {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    display: grid;
+    background-color: var(--co2);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 800;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    align-content: center;
+    color: var(--co3-bt);
+}
+
+.a-co .a-img div:hover {
+    opacity: 1;
+}
+
+.a-co img {
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+.a-co ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.a-co ul li a {
+    color: var(--co1);
+}
+
+.a-co ul li a:hover {
+    color: var(--co3-bt);
+}
+
+@media (max-width:800px) {
+    .a-co {
+        width: 40%;
+        margin: 20px 0;
+    }
+
+}
+
+@media (max-width:480px) {
+    .a-co {
+        width: 70%;
+        margin: 20px 0;
+    }
+
+}
+
+
+
 /* About content end */
 /* buy content start */
 .y-content1 {
@@ -2126,6 +2247,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
         align-items: center;
         background: linear-gradient(180deg, var(--co3) 50%, var(--co2) 50%);
     }
+
     .y-content1 {
         width: 100%;
         height: auto;

@@ -1,5 +1,6 @@
 # richa
 
+## About us
 
 If you're looking for a reliable and user-friendly website to buy books, look no further than our online bookstore! With a vast selection of books on various topics, we offer a one-stop-shop for all your reading needs.
 

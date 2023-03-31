@@ -14,21 +14,15 @@ Whether you're an avid reader or just looking for a specific book, our online bo
 
 **TEAM**
 1. Ahmed Elhouinki
-* [Instagram][1]
-* [Github][2]
+* [Instagram](https://www.instagram.com/ahmed0lh/)
+* [Github](https://github.com/Ahmed0EL)
 2. Abdelmoughit Bentaleb
-* [Instagram][3]
-* [Github][4]
+* [Instagram](http://example.com/)
+* [Github](http://example.com/ )
 3. Moad Rochdi
-* [Instagram][5]
-* [Github][6]
+* [Instagram](https://www.instagram.com/kha__taab/)
+* [Github](http://example.com/ )
 4. Reda Elmeski
-* [Instagram][7]
-* [Github][8]
-[1] : https://www.instagram.com/ahmed0lh/
-[2] : https://github.com/Ahmed0EL 
-[3] : http://example.com/ 
-[4] : http://example.com/ 
-[5] : https://www.instagram.com/kha__taab/ 
-[6] : https://github.com/DevCoder-glitch 
-[7] : https://www.instagram.com/elmeski_reda/ 
+* [Instagram](https://www.instagram.com/elmeski_reda/)
+* [Github](https://github.com/DevCoder-glitch)
+

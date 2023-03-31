@@ -8,8 +8,8 @@
     <meta name="description" content="Welcome to our online bookstore! We offer a vast selection of books for all ages and interests, from classic literature to contemporary bestsellers. Explore our collection and find your next favorite read. Shop now and enjoy free shipping on orders over 100DH">
     <title>Richa | Gallery</title>
     <!-- Recommended favicon format -->
-    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
-    <link rel="apple-touch-icon" href="/custom-icon.png">
+    <link rel="icon" href="./imge/logo_icone.ico">
+    <link rel="apple-touch-icon" href="./imge/logo_icone.ico">
   
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -34,7 +34,7 @@
 <body>
     <!-- /* header start */ -->
     <header class="p-3" id="header_js">
-        <a href="#" class="logo"><img src="./imge/logo.png" alt=""></a>
+        <a href="./index.html" class="logo"><img src="./imge/logo.png" alt=""></a>
         <ul class="he1 d-none d-sm-block">
             <li><a class="test" href="./index.html">home</a></li>
             <li><a class="test" href="./GALLERY.html">GALLERY</a></li>
@@ -46,7 +46,7 @@
                     aria-controls="offcanvasRight" href="#"><i class="fi fi-rr-menu-burger"></i></a></li>
             <li id="search1"><a href="#" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><i
                         class="fi fi-rr-search"></i></a></li>
-            <li><a href="#"><i class="fi fi-rr-shopping-cart"></i></a></li>
+            <li  ><a id="cart_s"  onclick="cart_add(0)" ><i class="fi fi-rr-shopping-cart"></i> <span id="cart_p" >0</span> </a></li>
         </ul>
     </header>
     <div class="collapse navbar-collapse p-2 text-center" id="collapsibleNavbar">
@@ -55,6 +55,14 @@
                 <input type="search" name="search" id="search" placeholder="search...">
             </li>
         </ul>
+    </div>
+    <div id="cart" style="display: none;">
+        <div id="cart_r">
+            <h3>Shop</h3>
+            <button onclick="cart_add('a')" ><i class="fi fi-rr-cross"></i></button>
+        </div>
+        <div id="cart_d" ></div>
+        <div id="cart_t"><h4>Total: <span id="cart_tt" >0</span></h4><button onclick="window.location.href = 'buy.html';">BUY</button></div>
     </div>
     <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -88,7 +96,7 @@
                                 <h5>Red Queen</h5>
                                 <p>143Dh <sup>200Dh</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(1)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -100,7 +108,7 @@
                                 <h5>the invasion of the tearling</h5>
                                 <p>140Dh <sup>250Dh</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(2)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -112,7 +120,7 @@
                                 <h5>the dinosaur lords</h5>
                                 <p>80Dh <sup>250DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(3)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -124,7 +132,7 @@
                                 <h5>the library at mount char</h5>
                                 <p>60Dh <sup>250Dh</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(4)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card ">
@@ -136,7 +144,7 @@
                                 <h5>Archivist Wasp</h5>
                                 <p>90DH <sup>150DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(5)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -148,7 +156,7 @@
                                 <h5>THE WORLD OF ICE & FIRE</h5>
                                 <p> 350DH <sup>390DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(6)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -160,7 +168,7 @@
                                 <h5>the witcher <br>last wish</h5>
                                 <p>229DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(7)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -172,7 +180,7 @@
                                 <h5>the fifth season</h5>
                                 <p>180DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(8)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -184,7 +192,7 @@
                                 <h5>the liar's key</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(9)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -196,7 +204,7 @@
                                 <h5>six of grows</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(10)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -217,7 +225,7 @@
                                 <h5>رواية أنتيخريستوس 2</h5>
                                 <p>130DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(11)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -229,7 +237,7 @@
                                 <h5>فاتتني صلاة</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(12)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -241,7 +249,7 @@
                                 <h5>آن في الضيعة الخضراء"</h5>
                                 <p>150DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(13)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -253,7 +261,7 @@
                                 <h5>لأنك الله</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(14)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -265,7 +273,7 @@
                                 <h5>صاحب الظل الطويل"</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(15)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -277,7 +285,7 @@
                                 <h5>نظرية الفستق</h5>
                                 <p>130DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(16)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -289,7 +297,7 @@
                                 <h5>مطرقة الساحرات<< /h5>
                                         <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(17)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -301,7 +309,7 @@
                                 <h5>الليالي البيضاء</h5>
                                 <p>120DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(18)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -313,7 +321,7 @@
                                 <h5>جومانا ذات العيون البندقية</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(19)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -325,7 +333,7 @@
                                 <h5>أوبال</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(20)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -346,7 +354,7 @@
                                 <h5>الالحاد في مواجهة نفسه</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(21)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -358,7 +366,7 @@
                                 <h5>خزانة الحكمة بين العقل والعقل</h5>
                                 <p>110DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(22)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -370,7 +378,7 @@
                                 <h5>101 سر آريوس</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(23)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -382,7 +390,7 @@
                                 <h5>مدرسة الصحابة</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(24)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -394,7 +402,7 @@
                                 <h5>العظماء المائة</h5>
                                 <p>130DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(25)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -406,7 +414,7 @@
                                 <h5>علمني موسى</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(26)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -418,7 +426,7 @@
                                 <h5>تعظيم الله جل جلاله</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(27)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -430,7 +438,7 @@
                                 <h5>مدرسة محمد (ﷺ)</h5>
                                 <p>150DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(28)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -442,7 +450,7 @@
                                 <h5>المعركه الاخيره</h5>
                                 <p>190DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(29)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -454,7 +462,7 @@
                                 <h5>أنتِ أيضاً صحابية</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(30)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -475,7 +483,7 @@
                                 <h5>ظل الريح</h5>
                                 <p>120DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(31)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -487,7 +495,7 @@
                                 <h5>آن في آفونلي</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(32)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -499,7 +507,7 @@
                                 <h5>مزرعة الحيوان</h5>
                                 <p>40DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(33)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -511,7 +519,7 @@
                                 <h5>هاري بوتر والأمير الهجين</h5>
                                 <p>160DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(34)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -523,7 +531,7 @@
                                 <h5>شارلوك هولمز</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(35)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -535,7 +543,7 @@
                                 <h5>رواية المقامر</h5>
                                 <p>80DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(36)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card" onclick="book(37)">
@@ -547,7 +555,7 @@
                                 <h5>قلعة هاول المتحركة</h5>
                                 <p>6.35DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(37)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -559,7 +567,7 @@
                                 <h5>المد الهائل</h5>
                                 <p>4.50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(38)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -571,7 +579,7 @@
                                 <h5>الاخوة السود</h5>
                                 <p>6.50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(39)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -583,7 +591,7 @@
                                 <h5>الدجاجة التي حلمت بالطيران</h5>
                                 <p>200DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(40)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -604,7 +612,7 @@
                                 <h5>"حضارة العرب</h5>
                                 <p>8.40DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(41)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -614,9 +622,9 @@
                         <div class="product-info">
                             <div>
                                 <h5>Lost Islamic History</h5>
-                                <p>7.90DH <sup>300DH</sup></p>
+                                <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(42)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -626,9 +634,9 @@
                         <div class="product-info">
                             <div>
                                 <h5>Democracy: A life</h5>
-                                <p>9.50DH <sup>300DH</sup></p>
+                                <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(43)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -640,7 +648,7 @@
                                 <h5>Empire of grass</h5>
                                 <p>23DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(44)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -652,7 +660,7 @@
                                 <h5>ألمانيا الهتلرية والشرق الأوسط"</h5>
                                 <p>40DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(45)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -664,7 +672,7 @@
                                 <h5>This war without an enemy</h5>
                                 <p>9.80DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(46)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -676,7 +684,7 @@
                                 <h5>فجر إيبيرية</h5>
                                 <p>100DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(47)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -688,7 +696,7 @@
                                 <h5>الوجود التاريخي للأنبياء</h5>
                                 <p>20DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(48)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -700,7 +708,7 @@
                                 <h5>حلماً كان واقعاً صار</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(49)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -712,7 +720,7 @@
                                 <h5>ربيع قرطبة</h5>
                                 <p>140DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(50)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -733,7 +741,7 @@
                                 <h5>انتيخريستوس</h5>
                                 <p>120DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(51)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -745,7 +753,7 @@
                                 <h5>سقطرى</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(52)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -757,7 +765,7 @@
                                 <h5>امواج أكما</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(53)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -769,7 +777,7 @@
                                 <h5>الساحرة الهجينة</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(54)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -781,7 +789,7 @@
                                 <h5>أماريتا</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(55)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -793,7 +801,7 @@
                                 <h5>السلام عليك يا صاحبي</h5>
                                 <p>30DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(56)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -805,7 +813,7 @@
                                 <h5>أرض السافلين</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(57)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -817,7 +825,7 @@
                                 <h5>قواعد جارتين</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(58)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -829,7 +837,7 @@
                                 <h5>الغيرة ومذابح الأعراض</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(59)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -841,7 +849,7 @@
                                 <h5>الميرانتي: أمير البحار</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(60)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -862,7 +870,7 @@
                                 <h5>عقدك النفسية سجنك الأبدي</h5>
                                 <p>130DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(61)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -874,7 +882,7 @@
                                 <h5>الدماغ .. وكيف يطور بنيته وأداءه</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(62)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -886,7 +894,7 @@
                                 <h5>أوقف الأعذار !</h5>
                                 <p>40DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(63)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -898,7 +906,7 @@
                                 <h5>خراب</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(64)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -910,7 +918,7 @@
                                 <h5>من يخاف مدينة النحاس</h5>
                                 <p>80DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(65)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -922,7 +930,7 @@
                                 <h5>كبر دماغك</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(66)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -934,7 +942,7 @@
                                 <h5>العقل والمادة</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(67)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -946,7 +954,7 @@
                                 <h5>حديث الصباح</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(68)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -958,7 +966,7 @@
                                 <h5>مثل برق خبا</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(69)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -970,7 +978,7 @@
                                 <h5>الباب الثالث</h5>
                                 <p>100DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(70)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -991,7 +999,7 @@
                                 <h5>مدينة ما بين الجسور</h5>
                                 <p>180DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(71)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1003,7 +1011,7 @@
                                 <h5>بنو الأزرق</h5>
                                 <p>170DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(72)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1015,7 +1023,7 @@
                                 <h5>لحكاية وما فيها</h5>
                                 <p>120DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(73)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1027,7 +1035,7 @@
                                 <h5>غريق</h5>
                                 <p>80DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(74)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1039,7 +1047,7 @@
                                 <h5>مطاردة جاك السفاح</h5>
                                 <p>250DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(75)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1051,7 +1059,7 @@
                                 <h5>خزانة الكتب الجميلة</h5>
                                 <p>130DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(76)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1063,7 +1071,7 @@
                                 <h5>أل100</h5>
                                 <p>270DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(77)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1075,7 +1083,7 @@
                                 <h5>شرفة على العدم</h5>
                                 <p>130DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(78)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1084,10 +1092,10 @@
                         </div>
                         <div class="product-info">
                             <div>
-                                <h5></sub></h5>
+                                <h5>A LIVING REMEDY A MEMOIR</h5>
                                 <p>190DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(79)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1099,7 +1107,7 @@
                                 <h5>تابوت العهد</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(80)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1113,122 +1121,122 @@
                 <div class="product-container">
                     <div class="product-card">
                         <div class="product-image" onclick="book(81)">
-                            <img src="./books/for you/for1.jpg" alt="">
+                            <img src="./books/for_you/for1.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>موت على قيد الحياة</h5>
                                 <p>90DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(81)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(82)">
-                            <img src="./books/for you/for2.jpg" alt="">
+                            <img src="./books/for_you/for2.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>حكايات القيوط</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(82)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(83)">
-                            <img src="./books/for you/for3.jpg" alt="">
+                            <img src="./books/for_you/for3.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>Land of promise</h5>
                                 <p>130DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(83)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(84)">
-                            <img src="./books/for you/for4.jpg" alt="">
+                            <img src="./books/for_you/for4.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>ما رواه البحر</h5>
                                 <p>80DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(84)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(85)">
-                            <img src="./books/for you/for5.jpg" alt="">
+                            <img src="./books/for_you/for5.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>دون جوان يحكي عن نفسه</h5>
                                 <p>160DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(85)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(86)">
-                            <img src="./books/for you/for6.jpg" alt="">
+                            <img src="./books/for_you/for6.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>معشر الجن</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(86)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(87)">
-                            <img src="./books/for you/for7.jpg" alt="">
+                            <img src="./books/for_you/for7.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>أساطير السفر السبعة</h5>
                                 <p>140DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(87)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(88)">
-                            <img src="./books/for you/for9.jpg" alt="">
+                            <img src="./books/for_you/for9.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>جثة قي بيت طائر الدودو</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(88)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(89)">
-                            <img src="./books/for you/for8.jpg" alt="">
+                            <img src="./books/for_you/for8.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>ديك الجن</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(89)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(90)">
-                            <img src="./books/for you/for10.jpg" alt="">
+                            <img src="./books/for_you/for10.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>يام مع الباشا</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(90)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1243,7 +1251,7 @@
         <button onclick="clo_g()" id="close"><i class="fi fi-rr-cross"></i></button>
         <div class="b-content-1">
             <div class="b-co1">
-                <img id="b-img" src="./imge/arabic/الأب الغني الأب الفقير.jpeg" alt="">
+                <img id="b-img" src="" alt="">
             </div>
             <div class="b-co2">
                 <h3 id="b-name"></h3>
@@ -1383,74 +1391,74 @@
                 <div class="product-container">
                     <div class="product-card">
                         <div class="product-image" onclick="book(85)">
-                            <img src="./books/for you/for5.jpg" alt="">
+                            <img src="./books/for_you/for5.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>دون جوان يحكي عن نفسه</h5>
                                 <p>160DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(85)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(86)">
-                            <img src="./books/for you/for6.jpg" alt="">
+                            <img src="./books/for_you/for6.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>معشر الجن</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(86)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(87)">
-                            <img src="./books/for you/for7.jpg" alt="">
+                            <img src="./books/for_you/for7.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>أساطير السفر السبعة</h5>
                                 <p>140DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(87)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(88)">
-                            <img src="./books/for you/for9.jpg" alt="">
+                            <img src="./books/for_you/for9.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>جثة قي بيت طائر الدودو</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(88)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(89)">
-                            <img src="./books/for you/for8.jpg" alt="">
+                            <img src="./books/for_you/for8.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>ديك الجن</h5>
                                 <p>60DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(89)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image" onclick="book(90)">
-                            <img src="./books/for you/for10.jpg" alt="">
+                            <img src="./books/for_you/for10.jpg" alt="">
                         </div>
                         <div class="product-info">
                             <div>
                                 <h5>يام مع الباشا</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(90)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1462,7 +1470,7 @@
                                 <h5>انتيخريستوس</h5>
                                 <p>120DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(51)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1474,7 +1482,7 @@
                                 <h5>سقطرى</h5>
                                 <p>50DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(52)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1486,7 +1494,7 @@
                                 <h5>امواج أكما</h5>
                                 <p>80DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(53)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -1498,7 +1506,7 @@
                                 <h5>الساحرة الهجينة</h5>
                                 <p>70DH <sup>300DH</sup></p>
                             </div>
-                            <button><i class="fi fi-rr-shopping-cart-add"></i></button>
+                            <button onclick="cart_add(54)" ><i class="fi fi-rr-shopping-cart-add"></i></button>
                         </div>
                     </div>
                 </div>

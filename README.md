@@ -25,10 +25,10 @@ Whether you're an avid reader or just looking for a specific book, our online bo
 4. Reda Elmeski
 * [Instagram][7]
 * [Github][8]
-[1]: https://www.instagram.com/ahmed0lh/
-[2]: https://github.com/Ahmed0EL 
-[3]: http://example.com/ 
-[4]: http://example.com/ 
-[5]: https://www.instagram.com/kha__taab/ 
-[6]: https://github.com/DevCoder-glitch 
-[7]: https://www.instagram.com/elmeski_reda/ 
+[1] : https://www.instagram.com/ahmed0lh/
+[2] : https://github.com/Ahmed0EL 
+[3] : http://example.com/ 
+[4] : http://example.com/ 
+[5] : https://www.instagram.com/kha__taab/ 
+[6] : https://github.com/DevCoder-glitch 
+[7] : https://www.instagram.com/elmeski_reda/ 

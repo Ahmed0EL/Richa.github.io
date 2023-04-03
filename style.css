@@ -128,6 +128,33 @@
     background: none;
 }
 
+
+
+@media (max-width:770px) {
+    #cart{
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: var(--co2);
+        z-index: 50;
+    }
+    
+}
+@media (max-width:425px) {
+    #cart{
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: var(--co2);
+        z-index: 50;
+    }
+    
+}
+
 /* button */
 
 button {
@@ -271,10 +298,15 @@ header .he1 li,
     list-style: none;
     text-transform: uppercase;
     margin: 10px 5px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }
 
 .he11 a {
     color: var(--co1);
+}
+.he11 a:hover{
+    color: var(--co3-bt);
 }
 
 #collapsibleNavbar {
@@ -968,7 +1000,7 @@ header .he1 li,
         text-align: center;
         font-size: 15px;
         line-height: 400px;
-        color: var(--co2);
+        color: var(--co1);
         transform: rotate(270deg);
     }
 
@@ -2110,7 +2142,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
     }
 
     .c-content1 button {
-        background-color: var(--co3);
+        background-color: var(--co3-bt);
         color: var(--co2);
         border: none;
         border-radius: 60px;
@@ -2367,7 +2399,8 @@ footer #fo2 .fo-hv:is(:after, :hover) {
         width: 100%;
         height: auto;
         display: grid;
-        margin-right: 10px;
+        margin: 10px;
+        order: 2;
     }
 
     .y-content1 .y-co2 {
@@ -2377,6 +2410,7 @@ footer #fo2 .fo-hv:is(:after, :hover) {
         border-radius: 30px;
         padding: 10px;
         position: relative;
+        order: 1;
     }
 
     .y-content1 .y-co1 .name {

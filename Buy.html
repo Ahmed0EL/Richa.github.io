@@ -8,8 +8,8 @@
     <meta name="description" content="Welcome to our online bookstore! We offer a vast selection of books for all ages and interests, from classic literature to contemporary bestsellers. Explore our collection and find your next favorite read. Shop now and enjoy free shipping on orders over 100DH">
     <title>Richa | Buy </title>
     <!-- Recommended favicon format -->
-    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
-    <link rel="apple-touch-icon" href="/custom-icon.png">
+    <link rel="icon" href="./imge/logo_icone.ico">
+    <link rel="apple-touch-icon" href="./imge/logo_icone.ico">
   
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -34,7 +34,7 @@
 <body>
   <!-- /* header start */ -->
   <header class="p-3" id="header_js">
-    <a href="#" class="logo"><img src="./imge/logo.png" alt=""></a>
+    <a href="./index.html" class="logo"><img src="./imge/logo.png" alt=""></a>
     <ul class="he1 d-none d-sm-block">
       <li><a class="test" href="./index.html">home</a></li>
       <li><a class="test" href="./GALLERY.html">GALLERY</a></li>
@@ -75,39 +75,39 @@
             <div class="y-co1">
                 <table>
                     <tr>
-                        <td><label for="Name" id="span1">Name/Last Name</label></td>
+                        <td><label for="value1" id="span1">Name/Last Name</label></td>
                         <td>
                             <input type="text" class="name" id="value1" required>
                             <input type="text" class="name" id="value2" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="" id="span2">Adresse:</label></td>
+                        <td><label for="value_adresse" id="span2">Adresse:</label></td>
                         <td><input type="text" id="value_adresse" required></td>
                     </tr>
                     <tr>
-                        <td><label for="" id="span3">Your City:</label></td>
+                        <td><label for="value_city" id="span3">Your City:</label></td>
                         <td><input type="text" id="value_city" required></td>
                     </tr>
                     <tr>
-                        <td><label for="" id="span4">Postal:</label></td>
+                        <td><label for="value_postal" id="span4">Postal:</label></td>
                         <td><input type="text" id="value_postal" required></td>
                     </tr>
                     <tr>
-                        <td><label for="" id="span5">Phone Number:</label></td>
+                        <td><label for="value_phone" id="span5">Phone Number:</label></td>
                         <td><input type="text" id="value_phone" required></td>
                     </tr>
                     <tr>
-                        <td><label for="" id="span6">Email:</label></td>
+                        <td><label for="value_email" id="span6">Email:</label></td>
                         <td><input type="email" id="value_email" required></td>
                     </tr>
                     <tr>
-                        <td><label for="" id="span7">Create Your Password:</label></td>
+                        <td><label for="value_pass" id="span7">Create Your Password:</label></td>
                         <td><input type="password" id="value_pass" required></td>
                     </tr>
                     <tr>
-                        <td><label for="">Note:</label></td>
-                        <td><textarea name="" id="" cols="38" rows="5" id="value_note"></textarea></td>
+                        <td><label for="value_note">Note:</label></td>
+                        <td><textarea cols="38" rows="5" id="value_note"></textarea></td>
                     </tr>
                 </table>
             </div>
@@ -115,7 +115,7 @@
                 <h5>VOTRE COMMANDE</h5>
                 <h6>PRODUIT</h6>
                 <hr>
-                <div class="pro"></div>
+                <div class="pro" id="add_pro" ></div>
                 <hr>
                 <h6>Sous-total</h6>
                 <hr>

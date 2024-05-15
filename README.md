@@ -16,13 +16,4 @@ Whether you're an avid reader or just looking for a specific book, our online bo
 1. Ahmed Elhouinki
 * [Instagram](https://www.instagram.com/ahmed0lh/)
 * [Github](https://github.com/Ahmed0EL)
-2. Abdelmoughit Bentaleb
-* [Instagram](http://example.com/)
-* [Github](http://example.com/ )
-3. Moad Rochdi
-* [Instagram](https://www.instagram.com/kha__taab/)
-* [Github](http://example.com/ )
-4. Reda Elmeski
-* [Instagram](https://www.instagram.com/elmeski_reda/)
-* [Github](https://github.com/DevCoder-glitch)
 

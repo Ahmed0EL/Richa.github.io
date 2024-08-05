@@ -356,7 +356,7 @@ header .he1 li,
 }
 
 .co .text h1 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     font-weight: 900;
     color: var(--co4);
 
@@ -379,6 +379,47 @@ header .he1 li,
 .content .coll {
     color: var(--co2);
 }
+/* Existing CSS here */
+
+@media (max-width: 480px) {
+    .co {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+        padding-top: 80px;
+
+    }
+
+    .co div {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .co .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .co .text h5 {
+        font-size: 1rem;
+    }
+
+    .co .text button {
+        width: 80px;
+        height: 30px;
+    }
+
+    .content {
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+    .content img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 /* content-1 -------------------------------------------------- */
 .content-1 {
